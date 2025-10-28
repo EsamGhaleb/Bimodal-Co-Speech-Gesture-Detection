@@ -34,7 +34,7 @@ class PositionalEncoding(nn.Module):
         return self.dropout(x)
     
 def load_STGCN(weights_path, device='cuda'):
-    weights_path = path.join(weights_path, 'joint_finetuned.pt')
+    weights_path = path.join(weights_path, 'pt_models/joint_finetuned.pt')
     gcn_model = STGCN(device=device)
     gcn_model.load_state_dict(torch.load(weights_path))
     return gcn_model

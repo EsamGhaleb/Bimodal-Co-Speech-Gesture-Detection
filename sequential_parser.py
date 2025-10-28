@@ -22,7 +22,7 @@ def get_parser():
     parser.add_argument('-Experiment_name', default='')
     parser.add_argument(
         '--config',
-        default='./config/train/train_speech_alone_wav2vec2_dutch.yaml',
+        default='/Users/esagha/Projects/Bimodal-Co-Speech-Gesture-Detection/config/base_config.yaml',
         help='path to the configuration file')
 
     # processor
